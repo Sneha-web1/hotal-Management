@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimonials with Coverflow Effect</title>
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="container px-4">
+      <div class="swiper mySwiper">
+        <!-- Single swiper-wrapper containing multiple swiper-slide elements -->
+        <div class="swiper-wrapper mb-5">
+          <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+            <img src="Img/About/team.jpg" class="w-100" />
+            <h5 class="mt-2">Random Name 1</h5>
+          </div>
+          <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+            <img src="Img/About/team.jpg" class="w-100" />
+            <h5 class="mt-2">Random Name 2</h5>
+          </div>
+          <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+            <img src="Img/About/team.jpg" class="w-100" />
+            <h5 class="mt-2">Random Name 3</h5>
+          </div>
+          <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+            <img src="Img/About/team.jpg" class="w-100" />
+            <h5 class="mt-2">Random Name 4</h5>
+          </div>
+          <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+            <img src="Img/About/team.jpg" class="w-100" />
+            <h5 class="mt-2">Random Name 5</h5>
+          </div>
+          <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+            <img src="Img/About/team.jpg" class="w-100" />
+            <h5 class="mt-2">Random Name 1</h5>
+          </div>
+          <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+            <img src="Img/About/team.jpg" class="w-100" />
+            <h5 class="mt-2">Random Name 2</h5>
+          </div>
+          <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+            <img src="Img/About/team.jpg" class="w-100" />
+            <h5 class="mt-2">Random Name 3</h5>
+          </div>
+          <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+            <img src="Img/About/team.jpg" class="w-100" />
+            <h5 class="mt-2">Random Name 4</h5>
+          </div>
+          <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+            <img src="Img/About/team.jpg" class="w-100" />
+            <h5 class="mt-2">Random Name 5</h5>
+          </div>
+        </div>
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4, // Set number of slides to show
+        centeredSlides: true, // Center active slide
+        loop: true, // Enable looping for infinite scroll
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        slideToClickedSlide: true, // Enable slide movement on image click
+      });
+    </script>
+  </body>
+</html>
