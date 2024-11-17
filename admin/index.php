@@ -53,7 +53,6 @@
               class="form-control shadow-none text-center"
               placeholder="Password"
             />
-            <input type="text" placeholder="HEllo">
           </div>
           <button name="login" type="submit" class="btn text-white shadow-none custom-bg">
             LOGIN
