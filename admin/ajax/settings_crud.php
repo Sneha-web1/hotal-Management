@@ -18,6 +18,8 @@
     {
         $frm_data = filteration($_POST);
 
-        UPDATE `settings` SET `sr_no`='[value-1]',`site_title`='[value-2]',`site_about`='[value-3]',`shutdown`='[value-4]' WHERE 1
+        $q= "UPDATE `settings` SET `site_title`='?',`site_about`='? WHERE `sr_no`=?";
+        $values = ['$frm_data'['site_title'],$frm_data['site_about'],1];
+        $res = upadte($q,$values,'ssi');
     }
 ?> 
